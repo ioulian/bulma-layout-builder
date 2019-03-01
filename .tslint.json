@@ -1,0 +1,19 @@
+{
+  "extends": ["tslint:recommended", "tslint-eslint-rules", "tslint-config-prettier"],
+  "rules": {
+    "new-parens": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": true,
+    "no-console": {
+      "severity": "warning",
+      "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+    },
+    "interface-name": false,
+    "member-ordering": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false
+  },
+  "jsRules": {}
+}

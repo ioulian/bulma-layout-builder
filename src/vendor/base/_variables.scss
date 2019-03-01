@@ -1,0 +1,30 @@
+// Custom variables.
+$path-root: '/dist';
+
+// Timings.
+
+// Everything below this point is perceived as instant by humans.
+// You can use this as a delay for ajax calls/computations if you know they are fast.
+// That way you won't get a flickering loading bar for example.
+// See: http://cogsci.stackexchange.com/questions/1664/what-is-the-threshold-where-actions-are-perceived-as-instant
+
+$duration-perceptive-instant: 85ms;
+$duration-fast: 100ms; // Use for fast hover effects
+$duration-normal: 300ms;
+$duration-slow: 500ms; // Use for big transitions (accordion, page switch)
+$duration-user-flow: 5000ms; // Below this point feels like a coherent application flow
+$duration-attention-span: 12000ms; // After that point, the user loses his/her attention
+
+// Easing functions.
+
+// Material design easings.
+$swift-alt: cubic-bezier(0.55, 0, 0.1, 1);
+$swift-move: cubic-bezier(0.4, 0, 0.2, 1);
+$swifter-move: cubic-bezier(0.4, 0, 0, 1);
+$heavy-move: cubic-bezier(07, 0, 0.6, 1);
+$swift-in: cubic-bezier(0, 0, 0.2, 1);
+$swift-out: cubic-bezier(0.4, 0, 1, 1);
+
+// Colors.
+$color-white: #fff;
+$color-black: #000;

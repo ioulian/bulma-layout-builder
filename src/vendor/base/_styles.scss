@@ -1,0 +1,18 @@
+a,
+button,
+input[type='button'],
+input[type='submit'] {
+  touch-action: manipulation;
+}
+
+// Remove animations and transitions on devices that are low on resources or battery
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  text-decoration-skip-ink: auto;
+}
