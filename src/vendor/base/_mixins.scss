@@ -1,36 +1,36 @@
-$sizeUnit: rem;
-$marginKey: 'm';
-$paddingKey: 'p';
-$separator: '-';
-$sizes: (('none', 0), ('xxs', 0.125), ('xs', 0.25), ('sm', 0.5), ('md', 1), ('lg', 2), ('xl', 4), ('xxl', 8));
-$positions: (('t', 'top'), ('r', 'right'), ('b', 'bottom'), ('l', 'left'));
+$spacingUnit: rem;
+$spacingMarginKey: 'm';
+$spacingPaddingKey: 'p';
+$spacingSeparator: '-';
+$spacingSizes: (('none', 0), ('xxs', 0.125), ('xs', 0.25), ('sm', 0.5), ('md', 1), ('lg', 2), ('xl', 4), ('xxl', 8));
+$spacingPositions: (('t', 'top'), ('r', 'right'), ('b', 'bottom'), ('l', 'left'));
 
-@function sizeValue($key, $value) {
-  @return if($key == 'none', 0, $value + $sizeUnit);
+@function spacingsizevalue($key, $value) {
+  @return if($key == 'none', 0, $value + $spacingUnit);
 }
 
-@each $size in $sizes {
+@each $size in $spacingSizes {
   $sizeKey: nth($size, 1);
   $sizeValue: nth($size, 2);
 
-  .#{$marginKey}#{$separator}#{$sizeKey} {
-    margin: sizevalue($sizeKey, $sizeValue);
+  .#{$spacingMarginKey}#{$spacingSeparator}#{$sizeKey} {
+    margin: spacingsizevalue($sizeKey, $sizeValue);
   }
 
-  .#{$paddingKey}#{$separator}#{$sizeKey} {
-    padding: sizevalue($sizeKey, $sizeValue);
+  .#{$spacingPaddingKey}#{$spacingSeparator}#{$sizeKey} {
+    padding: spacingsizevalue($sizeKey, $sizeValue);
   }
 
-  @each $position in $positions {
+  @each $position in $spacingPositions {
     $posKey: nth($position, 1);
     $posValue: nth($position, 2);
 
-    .#{$marginKey}#{$separator}#{$posKey}#{$separator}#{$sizeKey} {
-      margin-#{$posValue}: sizevalue($sizeKey, $sizeValue);
+    .#{$spacingMarginKey}#{$spacingSeparator}#{$posKey}#{$spacingSeparator}#{$sizeKey} {
+      margin-#{$posValue}: spacingsizevalue($sizeKey, $sizeValue);
     }
 
-    .#{$paddingKey}#{$separator}#{$posKey}#{$separator}#{$sizeKey} {
-      padding-#{$posValue}: sizevalue($sizeKey, $sizeValue);
+    .#{$spacingPaddingKey}#{$spacingSeparator}#{$posKey}#{$spacingSeparator}#{$sizeKey} {
+      padding-#{$posValue}: spacingsizevalue($sizeKey, $sizeValue);
     }
   }
 }

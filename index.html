@@ -8,267 +8,621 @@
   </head>
 
   <body>
-    <nav class="navbar is-primary">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#" style="font-weight:bold;">
-            Wax Interactive
-          </a>
-          <span class="navbar-burger burger" data-target="navMenu" aria-controls="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+    <div class="layout">
+      <div class="layout__header">
+        <div class="has-background-primary p-md">
+          <h1 class="title is-size-4 has-text-white">
+            Bulma Layout builder<span class="is-block is-size-7 has-text-white-ter">for v0.7.4</span>
+          </h1>
         </div>
-        <div id="navMenu" class="navbar-menu">
-          <nav class="navbar-end" aria-label="Main menu" role="navigation">
-            <a href="#" class="navbar-item is-active">Home</a>
-            <a href="#" class="navbar-item">Blog</a>
-            <a href="#" class="navbar-item">Forum</a>
-            <a href="#" class="navbar-item">Shop</a>
-            <a href="#" class="navbar-item">Examples</a>
+      </div>
+      <div class="layout__template">
+        <input type="checkbox" id="debug" class="app-template-debug" checked />
+        <div id="template" class="app-template">
+          <nav class="navbar is-primary" data-name="Navbar" draggable="true">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="#" style="font-weight:bold;">
+                  Wax Interactive
+                </a>
+                <span class="navbar-burger burger" data-target="navMenu" aria-controls="navMenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navMenu" class="navbar-menu">
+                <nav class="navbar-end" aria-label="Main menu" role="navigation">
+                  <a href="#" class="navbar-item is-active">Home</a>
+                  <a href="#" class="navbar-item">Blog</a>
+                  <a href="#" class="navbar-item">Forum</a>
+                  <a href="#" class="navbar-item">Shop</a>
+                  <a href="#" class="navbar-item">Examples</a>
+                </nav>
+              </div>
+            </div>
           </nav>
+          <header class="hero is-medium is-primary" data-name="Hero" draggable="true">
+            <div class="hero-body" data-name="Hero Body" draggable="true">
+              <div class="container" data-name="Container" draggable="true">
+                <div class="columns" data-name="Columns" draggable="true">
+                  <div class="column is-8-desktop is-offset-2-desktop" data-name="Column" draggable="true">
+                    <h1 class="title is-2 is-spaced" data-name="Title" draggable="true">
+                      Hello Bulma!
+                    </h1>
+                    <h2 class="subtitle is-4" data-name="Subtitle" draggable="true">
+                      Congratulations! You're running the
+                      <strong>Bulma start</strong>
+                      project.
+                      <br />
+                      It includes everything you need to
+                      <strong>build your own website</strong>
+                      with Bulma.
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="section" data-name="Section" draggable="true">
+            <div class="container" data-name="Container" draggable="true">
+              <div class="columns" data-name="Columns" draggable="true">
+                <div class="column is-8-desktop is-offset-2-desktop" data-name="Column" draggable="true">
+                  <div class="content" data-name="Content" draggable="true">
+                    <h3 data-name="h3" draggable="true">What's included</h3>
+                    <p data-name="p" draggable="true">
+                      The
+                      <code>npm</code>
+                      dependencies included in
+                      <code>package.json</code>
+                      are:
+                    </p>
+                    <ul data-name="ul" draggable="true">
+                      <li data-name="li" draggable="true">
+                        <code>
+                          <a href="https://github.com/jgthms/bulma">bulma</a>
+                        </code>
+                      </li>
+                      <li data-name="li" draggable="true">
+                        <code>
+                          <a href="https://github.com/sass/node-sass">node-sass</a>
+                        </code>
+                        to compile your own Sass file
+                      </li>
+                      <li data-name="li" draggable="true">
+                        <code>
+                          <a href="https://github.com/postcss/postcss-cli">postcss-cli</a>
+                        </code>
+                        and
+                        <code>
+                          <a href="https://github.com/postcss/autoprefixer">autoprefixer</a>
+                        </code>
+                        to add support for older browsers
+                      </li>
+                      <li data-name="li" draggable="true">
+                        <code> <a href="https://babeljs.io/docs/usage/cli/">babel-cli</a> </code>,
+                        <code>
+                          <a href="https://github.com/babel/babel-preset-env">babel-preset-env</a>
+                        </code>
+                        and
+                        <code>
+                          <a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a>
+                        </code>
+                        for compiling ES6 JavaScript files
+                      </li>
+                    </ul>
+                    <p data-name="p" draggable="true">
+                      Apart from
+                      <code>package.json</code>, the following files are included:
+                    </p>
+                    <ul data-name="ul" draggable="true">
+                      <li data-name="li" draggable="true">
+                        <code>.babelrc</code>
+                        configuration file for
+                        <a href="https://babeljs.io/">Babel</a>
+                      </li>
+                      <li data-name="li" draggable="true">
+                        <code>.gitignore</code>
+                        common
+                        <a href="https://git-scm.com/">Git</a>
+                        ignored files
+                      </li>
+                      <li data-name="li" draggable="true">
+                        <code>index.html</code>
+                        this HTML5 file
+                      </li>
+                      <li data-name="li" draggable="true">
+                        <code>_sass/main.scss</code>
+                        a basic SCSS file that
+                        <strong>imports Bulma</strong>
+                        and explains how to
+                        <strong>customize</strong>
+                        your styles, and compiles to
+                        <code>css/main.css</code>
+                      </li>
+                      <li data-name="li" draggable="true">
+                        <code>_javascript/main.js</code>
+                        an ES6 JavaScript that compiles to
+                        <code>lib/main.js</code>
+                      </li>
+                    </ul>
+                    <h3 data-name="h3" draggable="true">Try it out!</h3>
+                    <p data-name="p" draggable="true">
+                      To see if your setup works, follow these steps:
+                    </p>
+                    <p data-name="p" draggable="true">
+                      The page background should turn
+                      <strong class="has-text-success">green</strong>!
+                    </p>
+                    <h3 data-name="h3" draggable="true">Get started</h3>
+                    <p data-name="p" draggable="true">
+                      You're
+                      <strong>ready</strong>
+                      to create your own designs with Bulma. Just edit or duplicate this page, or simply create a new
+                      one!
+                      <br />
+                      For example, this page is
+                      <strong>only</strong>
+                      built with the following
+                      <strong>Bulma elements</strong>:
+                    </p>
+                  </div>
+                  <table class="table is-bordered is-fullwidth" data-name="table" draggable="true">
+                    <thead>
+                      <tr>
+                        <th>Type</th>
+                        <th>CSS class</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Columns</th>
+                        <td>
+                          <code>
+                            <a href="http://bulma.io/documentation/columns/basics">columns</a>
+                          </code>
+                          <code>
+                            <a href="http://bulma.io/documentation/columns/basics">column</a>
+                          </code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Layout</th>
+                        <td>
+                          <code>
+                            <a href="http://bulma.io/documentation/layout/section">section</a>
+                          </code>
+                          <code>
+                            <a href="http://bulma.io/documentation/layout/container">container</a>
+                          </code>
+                          <code>
+                            <a href="http://bulma.io/documentation/layout/footer">footer</a>
+                          </code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Elements</th>
+                        <td>
+                          <code>
+                            <a href="http://bulma.io/documentation/elements/button">button</a>
+                          </code>
+                          <code>
+                            <a href="http://bulma.io/documentation/elements/content">content</a>
+                          </code>
+                          <code>
+                            <a href="http://bulma.io/documentation/elements/title">title</a>
+                          </code>
+                          <code>
+                            <a href="http://bulma.io/documentation/elements/title">subtitle</a>
+                          </code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Form</th>
+                        <td>
+                          <code>
+                            <a href="http://bulma.io/documentation/form/general">field</a>
+                          </code>
+                          <code>
+                            <a href="http://bulma.io/documentation/form/general">control</a>
+                          </code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Helpers</th>
+                        <td>
+                          <code>
+                            <a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-centered</a>
+                          </code>
+                          <code>
+                            <a href="http://bulma.io/documentation/modifiers/typography-helpers/"
+                              >has-text-weight-semibold</a
+                            >
+                          </code>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="content" data-name="COntent" draggable="true">
+                    <p>
+                      If you want to
+                      <strong>learn more</strong>, follow these links:
+                    </p>
+                  </div>
+                  <div class="field is-grouped" data-name="Field" draggable="true">
+                    <p class="control" data-name="p" draggable="true">
+                      <a class="button is-medium is-primary" href="http://bulma.io" data-name="button" draggable="true">
+                        <strong class="has-text-weight-semibold">Bulma homepage</strong>
+                      </a>
+                    </p>
+                    <p class="control" data-name="Control" draggable="true">
+                      <a
+                        class="button is-medium is-link"
+                        href="http://bulma.io/documentation/overview/start/"
+                        data-name="Media"
+                        draggable="true"
+                      >
+                        <strong class="has-text-weight-semibold">Documentation</strong>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer class="footer has-text-centered" data-name="Footer" draggable="true">
+            <div class="container" data-name="Container" draggable="true">
+              <div class="columns" data-name="Columns" draggable="true">
+                <div class="column is-8-desktop is-offset-2-desktop" data-name="Column" draggable="true">
+                  <p data-name="p" draggable="true">
+                    <strong class="has-text-weight-semibold">
+                      <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.1</a>
+                    </strong>
+                  </p>
+                  <p data-name="p" draggable="true">
+                    <small>
+                      Source code licensed
+                      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
-    </nav>
-    <header class="hero is-medium is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h1 class="title is-2 is-spaced">
-                Hello Bulma!
-              </h1>
-              <h2 class="subtitle is-4">
-                Congratulations! You're running the
-                <strong>Bulma start</strong>
-                project.
-                <br />
-                It includes everything you need to
-                <strong>build your own website</strong>
-                with Bulma.
-              </h2>
+      <div class="layout__sidebar p-sm">
+        <div class="content">
+          <p>
+            This is a tool designed to prototype html templates with drag 'n drop. The template is based on
+            <a href="https://bulma.io" target="_blank">Bulma.css</a>.
+          </p>
+          <p>How does this work:</p>
+          <ul class="is-size-7">
+            <li>Choose from elements in the sidebar and drag them into the template.</li>
+            <li>
+              When you hover an element, you'll see an overlay. Depending on the position of the mouse, it'll be at the
+              left of at the right of the element. This specifies the position of the added element (insert at the
+              beginning of the element of at the end).
+            </li>
+            <li>
+              While dragging you can press &quot;<strong>Shift</strong>&quot;. This tells the app to append or prepend
+              to the displayed element.
+            </li>
+            <li>
+              Click on element in the template to select it. Clicking backspace removes this element. Selecting it
+              updates the classList in the sidebar. Use it to add and/or remove classes on that element.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <h2 class="is-size-4 m-t-sm m-b-xs">Debug</h2>
+        <label for="debug" class="button is-link is-block">Toggle debug layout</label>
+        <hr />
+        <h2 class="is-size-4 m-t-sm m-b-xs">Classes</h2>
+        <select id="classes" class="is-block" multiple>
+          <optgroup label="Text colors">
+            <option value="has-text-white">has-text-white</option>
+            <option value="has-text-black">has-text-black</option>
+            <option value="has-text-light">has-text-light</option>
+            <option value="has-text-dark">has-text-dark</option>
+            <option value="has-text-primary">has-text-primary</option>
+            <option value="has-text-info">has-text-info</option>
+            <option value="has-text-link">has-text-link</option>
+            <option value="has-text-success">has-text-success</option>
+            <option value="has-text-warning">has-text-warning</option>
+            <option value="has-text-danger">has-text-danger</option>
+            <option value="has-text-black-bis">has-text-black-bis</option>
+            <option value="has-text-black-ter">has-text-black-ter</option>
+            <option value="has-text-grey-darker">has-text-grey-darker</option>
+            <option value="has-text-grey-dark">has-text-grey-dark</option>
+            <option value="has-text-grey">has-text-grey</option>
+            <option value="has-text-grey-light">has-text-grey-light</option>
+            <option value="has-text-grey-lighter">has-text-grey-lighter</option>
+            <option value="has-text-white-ter">has-text-white-ter</option>
+            <option value="has-text-white-bis">has-text-white-bis</option>
+          </optgroup>
+          <optgroup label="Background colors">
+            <option value="has-background-white">has-background-white</option>
+            <option value="has-background-black">has-background-black</option>
+            <option value="has-background-light">has-background-light</option>
+            <option value="has-background-dark">has-background-dark</option>
+            <option value="has-background-primary">has-background-primary</option>
+            <option value="has-background-info">has-background-info</option>
+            <option value="has-background-link">has-background-link</option>
+            <option value="has-background-success">has-background-success</option>
+            <option value="has-background-warning">has-background-warning</option>
+            <option value="has-background-danger">has-background-danger</option>
+            <option value="has-background-black-bis">has-background-black-bis</option>
+            <option value="has-background-black-ter">has-background-black-ter</option>
+            <option value="has-background-grey-darker">has-background-grey-darker</option>
+            <option value="has-background-grey-dark">has-background-grey-dark</option>
+            <option value="has-background-grey">has-background-grey</option>
+            <option value="has-background-grey-light">has-background-grey-light</option>
+            <option value="has-background-grey-lighter">has-background-grey-lighter</option>
+            <option value="has-background-white-ter">has-background-white-ter</option>
+            <option value="has-background-white-bis">has-background-white-bis</option>
+          </optgroup>
+          <optgroup label="Helpers">
+            <option value="is-clearfix">is-clearfix</option>
+            <option value="is-pulled-left">is-pulled-left</option>
+            <option value="is-pulled-right">is-pulled-right</option>
+            <option value="is-marginless">is-marginless</option>
+            <option value="is-paddingless">is-paddingless</option>
+            <option value="is-overlay">is-overlay</option>
+            <option value="is-clipped">is-clipped</option>
+            <option value="is-radiusless">is-radiusless</option>
+            <option value="is-shadowless">is-shadowless</option>
+            <option value="is-unselectable">is-unselectable</option>
+            <option value="is-invisible">is-invisible</option>
+            <option value="is-sr-only">is-sr-only</option>
+          </optgroup>
+          <optgroup label="Flex Helpers">
+            <option value="is-flex">is-flex</option>
+            <option value="is-flex-mobile">is-flex-mobile</option>
+            <option value="is-flex-tablet-only">is-flex-tablet-only</option>
+            <option value="is-flex-desktop-only">is-flex-desktop-only</option>
+            <option value="is-flex-widescreen-only">is-flex-widescreen-only</option>
+            <option value="is-flex-touch">is-flex-touch</option>
+            <option value="is-flex-tablet">is-flex-tablet</option>
+            <option value="is-flex-desktop">is-flex-desktop</option>
+            <option value="is-flex-widescreen">is-flex-widescreen</option>
+            <option value="is-flex-fullhd">is-flex-fullhd</option>
+          </optgroup>
+          <optgroup label="Block Helpers">
+            <option value="is-block">is-block</option>
+            <option value="is-block-mobile">is-block-mobile</option>
+            <option value="is-block-tablet-only">is-block-tablet-only</option>
+            <option value="is-block-desktop-only">is-block-desktop-only</option>
+            <option value="is-block-widescreen-only">is-block-widescreen-only</option>
+            <option value="is-block-touch">is-block-touch</option>
+            <option value="is-block-tablet">is-block-tablet</option>
+            <option value="is-block-desktop">is-block-desktop</option>
+            <option value="is-block-widescreen">is-block-widescreen</option>
+            <option value="is-block-fullhd">is-block-fullhd</option>
+          </optgroup>
+          <optgroup label="Inline Helpers">
+            <option value="is-inline">is-inline</option>
+            <option value="is-inline-mobile">is-inline-mobile</option>
+            <option value="is-inline-tablet-only">is-inline-tablet-only</option>
+            <option value="is-inline-desktop-only">is-inline-desktop-only</option>
+            <option value="is-inline-widescreen-only">is-inline-widescreen-only</option>
+            <option value="is-inline-touch">is-inline-touch</option>
+            <option value="is-inline-tablet">is-inline-tablet</option>
+            <option value="is-inline-desktop">is-inline-desktop</option>
+            <option value="is-inline-widescreen">is-inline-widescreen</option>
+            <option value="is-inline-fullhd">is-inline-fullhd</option>
+          </optgroup>
+          <optgroup label="Inline block Helpers">
+            <option value="is-inline-block">is-inline-block</option>
+            <option value="is-inline-block-mobile">is-inline-block-mobile</option>
+            <option value="is-inline-block-tablet-only">is-inline-block-tablet-only</option>
+            <option value="is-inline-block-desktop-only">is-inline-block-desktop-only</option>
+            <option value="is-inline-block-widescreen-only">is-inline-block-widescreen-only</option>
+            <option value="is-inline-block-touch">is-inline-block-touch</option>
+            <option value="is-inline-block-tablet">is-inline-block-tablet</option>
+            <option value="is-inline-block-desktop">is-inline-block-desktop</option>
+            <option value="is-inline-block-widescreen">is-inline-block-widescreen</option>
+            <option value="is-inline-block-fullhd">is-inline-block-fullhd</option>
+          </optgroup>
+          <optgroup label="Inline flex Helpers">
+            <option value="is-inline-flex">is-inline-flex</option>
+            <option value="is-inline-flex-mobile">is-inline-flex-mobile</option>
+            <option value="is-inline-flex-tablet-only">is-inline-flex-tablet-only</option>
+            <option value="is-inline-flex-desktop-only">is-inline-flex-desktop-only</option>
+            <option value="is-inline-flex-widescreen-only">is-inline-flex-widescreen-only</option>
+            <option value="is-inline-flex-touch">is-inline-flex-touch</option>
+            <option value="is-inline-flex-tablet">is-inline-flex-tablet</option>
+            <option value="is-inline-flex-desktop">is-inline-flex-desktop</option>
+            <option value="is-inline-flex-widescreen">is-inline-flex-widescreen</option>
+            <option value="is-inline-flex-fullhd">is-inline-flex-fullhd</option>
+          </optgroup>
+          <optgroup label="Hidden Helpers">
+            <option value="is-hidden">is-hidden</option>
+            <option value="is-hidden-mobile">is-hidden-mobile</option>
+            <option value="is-hidden-tablet-only">is-hidden-tablet-only</option>
+            <option value="is-hidden-desktop-only">is-hidden-desktop-only</option>
+            <option value="is-hidden-widescreen-only">is-hidden-widescreen-only</option>
+            <option value="is-hidden-touch">is-hidden-touch</option>
+            <option value="is-hidden-tablet">is-hidden-tablet</option>
+            <option value="is-hidden-desktop">is-hidden-desktop</option>
+            <option value="is-hidden-widescreen">is-hidden-widescreen</option>
+            <option value="is-hidden-fullhd">is-hidden-fullhd</option>
+          </optgroup>
+          <optgroup label="Sizes">
+            <option value="is-size-1">is-size-1</option>
+            <option value="is-size-1-mobile">is-size-1-mobile</option>
+            <option value="is-size-1-tablet">is-size-1-tablet</option>
+            <option value="is-size-1-touch">is-size-1-touch</option>
+            <option value="is-size-1-desktop">is-size-1-desktop</option>
+            <option value="is-size-1-widescreen">is-size-1-widescreen</option>
+            <option value="is-size-1-fullhd">is-size-1-fullhd</option>
+            <option value="is-size-2">is-size-2</option>
+            <option value="is-size-2-mobile">is-size-2-mobile</option>
+            <option value="is-size-2-tablet">is-size-2-tablet</option>
+            <option value="is-size-2-touch">is-size-2-touch</option>
+            <option value="is-size-2-desktop">is-size-2-desktop</option>
+            <option value="is-size-2-widescreen">is-size-2-widescreen</option>
+            <option value="is-size-2-fullhd">is-size-2-fullhd</option>
+          </optgroup>
+          <optgroup label="Text Helpers">
+            <option value="has-text-centered">has-text-centered</option>
+            <option value="has-text-justified">has-text-justified</option>
+            <option value="has-text-left">has-text-left</option>
+            <option value="has-text-right">has-text-right</option>
+            <option value="has-capitalized">has-capitalized</option>
+            <option value="has-lowercase">has-lowercase</option>
+            <option value="has-uppercase">has-uppercase</option>
+            <option value="has-italic">has-italic</option>
+            <option value="has-text-weight-light">has-text-weight-light</option>
+            <option value="has-text-weight-normal">has-text-weight-normal</option>
+            <option value="has-text-weight-semibold">has-text-weight-semibold</option>
+            <option value="has-text-weight-bold">has-text-weight-bold</option>
+            <option value="is-family-sans-serif">is-family-sans-serif</option>
+            <option value="is-family-monospace">is-family-monospace</option>
+            <option value="is-family-primary">is-family-primary</option>
+            <option value="is-family-secondary">is-family-secondary</option>
+            <option value="is-family-code">is-family-code</option>
+          </optgroup>
+          <optgroup label="Layout Helpers">
+            <option value="is-one-quarter">is-one-quarter</option>
+            <option value="is-one-quarter-mobile">is-one-quarter-mobile</option>
+            <option value="is-one-quarter-tablet">is-one-quarter-tablet</option>
+            <option value="is-one-quarter-desktop">is-one-quarter-desktop</option>
+            <option value="is-one-quarter-widescreen">is-one-quarter-widescreen</option>
+            <option value="is-one-quarter-fullhd">is-one-quarter-fullhd</option>
+            <option value="is-one-third">is-one-third</option>
+            <option value="is-one-third-mobile">is-one-third-mobile</option>
+            <option value="is-one-third-tablet">is-one-third-tablet</option>
+            <option value="is-one-third-desktop">is-one-third-desktop</option>
+            <option value="is-one-third-widescreen">is-one-third-widescreen</option>
+            <option value="is-one-third-fullhd">is-one-third-fullhd</option>
+            <option value="is-half">is-half</option>
+            <option value="is-half-mobile">is-half-mobile</option>
+            <option value="is-half-tablet">is-half-tablet</option>
+            <option value="is-half-desktop">is-half-desktop</option>
+            <option value="is-half-widescreen">is-half-widescreen</option>
+            <option value="is-half-fullhd">is-half-fullhd</option>
+            <option value="is-two-thirds">is-two-thirds</option>
+            <option value="is-two-thirds-mobile">is-two-thirds-mobile</option>
+            <option value="is-two-thirds-tablet">is-two-thirds-tablet</option>
+            <option value="is-two-thirds-desktop">is-two-thirds-desktop</option>
+            <option value="is-two-thirds-widescreen">is-two-thirds-widescreen</option>
+            <option value="is-two-thirds-fullhd">is-two-thirds-fullhd</option>
+            <option value="is-three-quarters">is-three-quarters</option>
+            <option value="is-three-quarters-mobile">is-three-quarters-mobile</option>
+            <option value="is-three-quarters-tablet">is-three-quarters-tablet</option>
+            <option value="is-three-quarters-desktop">is-three-quarters-desktop</option>
+            <option value="is-three-quarters-widescreen">is-three-quarters-widescreen</option>
+            <option value="is-three-quarters-fullhd">is-three-quarters-fullhd</option>
+          </optgroup>
+          <optgroup label="Grid Helpers">
+            <option value="is-variable">is-variable</option>
+            <option value="is-gapless">is-gapless</option>
+            <option value="is-0">is-0</option>
+            <option value="is-1">is-1</option>
+            <option value="is-2">is-2</option>
+            <option value="is-3">is-3</option>
+            <option value="is-4">is-4</option>
+            <option value="is-5">is-5</option>
+            <option value="is-6">is-6</option>
+            <option value="is-7">is-7</option>
+            <option value="is-8">is-8</option>
+          </optgroup>
+        </select>
+        <hr />
+        <h2 class="is-size-4 m-t-sm m-b-xs">Blocks</h2>
+        <div id="blocks" class="app-blocks">
+          <div class="app-blocks__template">
+            <h2 class="is-size-5 has-text-weight-bold">Basic Div</h2>
+            <div data-name="Div" draggable="true">Div</div>
+          </div>
+          <div class="app-blocks__template">
+            <h2 class="is-size-5 has-text-weight-bold">Container</h2>
+            <div class="container" data-name="Container" draggable="true"></div>
+          </div>
+          <div class="app-blocks__template">
+            <h2 class="is-size-5 has-text-weight-bold">Columns</h2>
+            <div class="columns" data-name="Columns" draggable="true"></div>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Column</h2>
+            <div class="column" data-name="Column" draggable="true"></div>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Media</h2>
+            <article class="media" data-name="Media" draggable="true"></article>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Media left</h2>
+            <figure class="media-left" data-name="Media left" draggable="true">
+              <p class="image is-64x64">
+                <img src="https://bulma.io/images/placeholders/128x128.png" />
+              </p>
+            </figure>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Media content</h2>
+            <div class="media-content" data-name="Media content" draggable="true">
+              <div class="content">
+                <p>
+                  <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
+                  tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                </p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                  </a>
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                  </a>
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                  </a>
+                </div>
+              </nav>
             </div>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Media right</h2>
+            <div class="media-right" data-name="Media right" draggable="true">
+              <button class="delete"></button>
+            </div>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Hero</h2>
+            <section class="hero" data-name="Hero" draggable="true"></section>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Hero body</h2>
+            <div class="hero-body" data-name="Hero body" draggable="true"></div>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Title</h2>
+            <h1 class="title" data-name="Title" draggable="true">Title</h1>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Subtitle</h2>
+            <h2 class="subtitle" data-name="Subtitle" draggable="true">Subtitle</h2>
+          </div>
+          <div class="app-blocks__template">
+            <h2>Footer</h2>
+            <footer class="footer" data-name="Footer" draggable="true">
+              <div class="content has-text-centered">
+                <p>
+                  <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                  <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+                  <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                </p>
+              </div>
+            </footer>
           </div>
         </div>
       </div>
-    </header>
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <div class="content">
-              <h3>What's included</h3>
-              <p>
-                The
-                <code>npm</code>
-                dependencies included in
-                <code>package.json</code>
-                are:
-              </p>
-              <ul>
-                <li>
-                  <code>
-                    <a href="https://github.com/jgthms/bulma">bulma</a>
-                  </code>
-                </li>
-                <li>
-                  <code>
-                    <a href="https://github.com/sass/node-sass">node-sass</a>
-                  </code>
-                  to compile your own Sass file
-                </li>
-                <li>
-                  <code>
-                    <a href="https://github.com/postcss/postcss-cli">postcss-cli</a>
-                  </code>
-                  and
-                  <code>
-                    <a href="https://github.com/postcss/autoprefixer">autoprefixer</a>
-                  </code>
-                  to add support for older browsers
-                </li>
-                <li>
-                  <code> <a href="https://babeljs.io/docs/usage/cli/">babel-cli</a> </code>,
-                  <code>
-                    <a href="https://github.com/babel/babel-preset-env">babel-preset-env</a>
-                  </code>
-                  and
-                  <code>
-                    <a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a>
-                  </code>
-                  for compiling ES6 JavaScript files
-                </li>
-              </ul>
-              <p>
-                Apart from
-                <code>package.json</code>, the following files are included:
-              </p>
-              <ul>
-                <li>
-                  <code>.babelrc</code>
-                  configuration file for
-                  <a href="https://babeljs.io/">Babel</a>
-                </li>
-                <li>
-                  <code>.gitignore</code>
-                  common
-                  <a href="https://git-scm.com/">Git</a>
-                  ignored files
-                </li>
-                <li>
-                  <code>index.html</code>
-                  this HTML5 file
-                </li>
-                <li>
-                  <code>_sass/main.scss</code>
-                  a basic SCSS file that
-                  <strong>imports Bulma</strong>
-                  and explains how to
-                  <strong>customize</strong>
-                  your styles, and compiles to
-                  <code>css/main.css</code>
-                </li>
-                <li>
-                  <code>_javascript/main.js</code>
-                  an ES6 JavaScript that compiles to
-                  <code>lib/main.js</code>
-                </li>
-              </ul>
-              <h3>Try it out!</h3>
-              <p>
-                To see if your setup works, follow these steps:
-              </p>
-              <p>
-                The page background should turn
-                <strong class="has-text-success">green</strong>!
-              </p>
-              <h3>Get started</h3>
-              <p>
-                You're
-                <strong>ready</strong>
-                to create your own designs with Bulma. Just edit or duplicate this page, or simply create a new one!
-                <br />
-                For example, this page is
-                <strong>only</strong>
-                built with the following
-                <strong>Bulma elements</strong>:
-              </p>
-            </div>
-            <table class="table is-bordered is-fullwidth">
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>CSS class</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Columns</th>
-                  <td>
-                    <code>
-                      <a href="http://bulma.io/documentation/columns/basics">columns</a>
-                    </code>
-                    <code>
-                      <a href="http://bulma.io/documentation/columns/basics">column</a>
-                    </code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Layout</th>
-                  <td>
-                    <code>
-                      <a href="http://bulma.io/documentation/layout/section">section</a>
-                    </code>
-                    <code>
-                      <a href="http://bulma.io/documentation/layout/container">container</a>
-                    </code>
-                    <code>
-                      <a href="http://bulma.io/documentation/layout/footer">footer</a>
-                    </code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Elements</th>
-                  <td>
-                    <code>
-                      <a href="http://bulma.io/documentation/elements/button">button</a>
-                    </code>
-                    <code>
-                      <a href="http://bulma.io/documentation/elements/content">content</a>
-                    </code>
-                    <code>
-                      <a href="http://bulma.io/documentation/elements/title">title</a>
-                    </code>
-                    <code>
-                      <a href="http://bulma.io/documentation/elements/title">subtitle</a>
-                    </code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Form</th>
-                  <td>
-                    <code>
-                      <a href="http://bulma.io/documentation/form/general">field</a>
-                    </code>
-                    <code>
-                      <a href="http://bulma.io/documentation/form/general">control</a>
-                    </code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Helpers</th>
-                  <td>
-                    <code>
-                      <a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-centered</a>
-                    </code>
-                    <code>
-                      <a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-weight-semibold</a>
-                    </code>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="content">
-              <p>
-                If you want to
-                <strong>learn more</strong>, follow these links:
-              </p>
-            </div>
-            <div class="field is-grouped">
-              <p class="control">
-                <a class="button is-medium is-primary" href="http://bulma.io">
-                  <strong class="has-text-weight-semibold">Bulma homepage</strong>
-                </a>
-              </p>
-              <p class="control">
-                <a class="button is-medium is-link" href="http://bulma.io/documentation/overview/start/">
-                  <strong class="has-text-weight-semibold">Documentation</strong>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer has-text-centered">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <p>
-              <strong class="has-text-weight-semibold">
-                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.1</a>
-              </strong>
-            </p>
-            <p>
-              <small>
-                Source code licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-              </small>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>
