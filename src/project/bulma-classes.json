@@ -1,0 +1,426 @@
+{
+  "classes": [
+    {
+      "name": "Text colors",
+      "classes": [
+        "has-text-white",
+        "has-text-black",
+        "has-text-light",
+        "has-text-dark",
+        "has-text-primary",
+        "has-text-info",
+        "has-text-link",
+        "has-text-success",
+        "has-text-warning",
+        "has-text-danger",
+        "has-text-black-bis",
+        "has-text-black-ter",
+        "has-text-grey-darker",
+        "has-text-grey-dark",
+        "has-text-grey",
+        "has-text-grey-light",
+        "has-text-grey-lighter",
+        "has-text-white-ter",
+        "has-text-white-bis"
+      ]
+    },
+    {
+      "name": "Background colors",
+      "classes": [
+        "has-background-white",
+        "has-background-black",
+        "has-background-light",
+        "has-background-dark",
+        "has-background-primary",
+        "has-background-info",
+        "has-background-link",
+        "has-background-success",
+        "has-background-warning",
+        "has-background-danger",
+        "has-background-black-bis",
+        "has-background-black-ter",
+        "has-background-grey-darker",
+        "has-background-grey-dark",
+        "has-background-grey",
+        "has-background-grey-light",
+        "has-background-grey-lighter",
+        "has-background-white-ter",
+        "has-background-white-bis"
+      ]
+    },
+    {
+      "name": "Helpers",
+      "classes": [
+        "is-clearfix",
+        "is-pulled-left",
+        "is-pulled-right",
+        "is-marginless",
+        "is-paddingless",
+        "is-overlay",
+        "is-clipped",
+        "is-radiusless",
+        "is-shadowless",
+        "is-unselectable",
+        "is-invisible",
+        "is-sr-only"
+      ]
+    },
+    {
+      "name": "Flex helpers",
+      "classes": [
+        "is-flex",
+        "is-flex-mobile",
+        "is-flex-tablet-only",
+        "is-flex-desktop-only",
+        "is-flex-widescreen-only",
+        "is-flex-touch",
+        "is-flex-tablet",
+        "is-flex-desktop",
+        "is-flex-widescreen",
+        "is-flex-fullhd"
+      ]
+    },
+    {
+      "name": "Block helpers",
+      "classes": [
+        "is-block",
+        "is-block-mobile",
+        "is-block-tablet-only",
+        "is-block-desktop-only",
+        "is-block-widescreen-only",
+        "is-block-touch",
+        "is-block-tablet",
+        "is-block-desktop",
+        "is-block-widescreen",
+        "is-block-fullhd"
+      ]
+    },
+    {
+      "name": "Inline helpers",
+      "classes": [
+        "is-inline",
+        "is-inline-mobile",
+        "is-inline-tablet-only",
+        "is-inline-desktop-only",
+        "is-inline-widescreen-only",
+        "is-inline-touch",
+        "is-inline-tablet",
+        "is-inline-desktop",
+        "is-inline-widescreen",
+        "is-inline-fullhd"
+      ]
+    },
+    {
+      "name": "Inline-block helpers",
+      "classes": [
+        "is-inline-block",
+        "is-inline-block-mobile",
+        "is-inline-block-tablet-only",
+        "is-inline-block-desktop-only",
+        "is-inline-block-widescreen-only",
+        "is-inline-block-touch",
+        "is-inline-block-tablet",
+        "is-inline-block-desktop",
+        "is-inline-block-widescreen",
+        "is-inline-block-fullhd"
+      ]
+    },
+    {
+      "name": "Inline-flex helpers",
+      "classes": [
+        "is-inline-flex",
+        "is-inline-flex-mobile",
+        "is-inline-flex-tablet-only",
+        "is-inline-flex-desktop-only",
+        "is-inline-flex-widescreen-only",
+        "is-inline-flex-touch",
+        "is-inline-flex-tablet",
+        "is-inline-flex-desktop",
+        "is-inline-flex-widescreen",
+        "is-inline-flex-fullhd"
+      ]
+    },
+    {
+      "name": "Hidden helpers",
+      "classes": [
+        "is-hidden",
+        "is-hidden-mobile",
+        "is-hidden-tablet-only",
+        "is-hidden-desktop-only",
+        "is-hidden-widescreen-only",
+        "is-hidden-touch",
+        "is-hidden-tablet",
+        "is-hidden-desktop",
+        "is-hidden-widescreen",
+        "is-hidden-fullhd"
+      ]
+    },
+    {
+      "name": "Sizes",
+      "classes": [
+        "is-size-1",
+        "is-size-1-mobile",
+        "is-size-1-tablet",
+        "is-size-1-touch",
+        "is-size-1-desktop",
+        "is-size-1-widescreen",
+        "is-size-1-fullhd",
+        "is-size-2",
+        "is-size-2-mobile",
+        "is-size-2-tablet",
+        "is-size-2-touch",
+        "is-size-2-desktop",
+        "is-size-2-widescreen",
+        "is-size-2-fullhd",
+        "is-size-3",
+        "is-size-3-mobile",
+        "is-size-3-tablet",
+        "is-size-3-touch",
+        "is-size-3-desktop",
+        "is-size-3-widescreen",
+        "is-size-3-fullhd",
+        "is-size-4",
+        "is-size-4-mobile",
+        "is-size-4-tablet",
+        "is-size-4-touch",
+        "is-size-4-desktop",
+        "is-size-4-widescreen",
+        "is-size-4-fullhd",
+        "is-size-5",
+        "is-size-5-mobile",
+        "is-size-5-tablet",
+        "is-size-5-touch",
+        "is-size-5-desktop",
+        "is-size-5-widescreen",
+        "is-size-5-fullhd",
+        "is-size-6",
+        "is-size-6-mobile",
+        "is-size-6-tablet",
+        "is-size-6-touch",
+        "is-size-6-desktop",
+        "is-size-6-widescreen",
+        "is-size-6-fullhd",
+        "is-size-7",
+        "is-size-7-mobile",
+        "is-size-7-tablet",
+        "is-size-7-touch",
+        "is-size-7-desktop",
+        "is-size-7-widescreen",
+        "is-size-7-fullhd"
+      ]
+    },
+    {
+      "name": "Text",
+      "classes": [
+        "has-text-centered",
+        "has-text-centered-mobile",
+        "has-text-centered-tablet",
+        "has-text-centered-tablet-only",
+        "has-text-centered-touch",
+        "has-text-centered-desktop",
+        "has-text-centered-desktop-only",
+        "has-text-centered-widescreen",
+        "has-text-centered-fullhd",
+        "has-text-justified",
+        "has-text-justified-mobile",
+        "has-text-justified-tablet",
+        "has-text-justified-tablet-only",
+        "has-text-justified-touch",
+        "has-text-justified-desktop",
+        "has-text-justified-desktop-only",
+        "has-text-justified-widescreen",
+        "has-text-justified-fullhd",
+        "has-text-left",
+        "has-text-left-mobile",
+        "has-text-left-tablet",
+        "has-text-left-tablet-only",
+        "has-text-left-touch",
+        "has-text-left-desktop",
+        "has-text-left-desktop-only",
+        "has-text-left-widescreen",
+        "has-text-left-fullhd",
+        "has-text-right",
+        "has-text-right-mobile",
+        "has-text-right-tablet",
+        "has-text-right-tablet-only",
+        "has-text-right-touch",
+        "has-text-right-desktop",
+        "has-text-right-desktop-only",
+        "has-text-right-widescreen",
+        "has-text-right-fullhd",
+        "has-capitalized",
+        "has-lowercase",
+        "has-uppercase",
+        "has-italic",
+        "has-text-weight-light",
+        "has-text-weight-normal",
+        "has-text-weight-semibold",
+        "has-text-weight-bold",
+        "is-family-sans-serif",
+        "is-family-monospace",
+        "is-family-primary",
+        "is-family-secondary",
+        "is-family-code"
+      ]
+    },
+    {
+      "name": "Layout",
+      "classes": [
+        "is-one-quarter",
+        "is-one-quarter-mobile",
+        "is-one-quarter-tablet",
+        "is-one-quarter-desktop",
+        "is-one-quarter-widescreen",
+        "is-one-quarter-fullhd",
+        "is-one-third",
+        "is-one-third-mobile",
+        "is-one-third-tablet",
+        "is-one-third-desktop",
+        "is-one-third-widescreen",
+        "is-one-third-fullhd",
+        "is-half",
+        "is-half-mobile",
+        "is-half-tablet",
+        "is-half-desktop",
+        "is-half-widescreen",
+        "is-half-fullhd",
+        "is-two-thirds",
+        "is-two-thirds-mobile",
+        "is-two-thirds-tablet",
+        "is-two-thirds-desktop",
+        "is-two-thirds-widescreen",
+        "is-two-thirds-fullhd",
+        "is-three-quarters",
+        "is-three-quarters-mobile",
+        "is-three-quarters-tablet",
+        "is-three-quarters-desktop",
+        "is-three-quarters-widescreen",
+        "is-three-quarters-fullhd"
+      ]
+    },
+    {
+      "name": "Grid helpers",
+      "classes": ["is-variable", "is-gapless", "is-0", "is-1", "is-2", "is-3", "is-4", "is-5", "is-6", "is-7", "is-8"]
+    },
+    {
+      "name": "Component helpers helpers",
+      "classes": ["is-mobile", "content", "is-medium", "is-large"]
+    },
+    {
+      "name": "Container",
+      "classes": ["container", "is-fluid", "is-widescreen", "is-fullhd"]
+    },
+    {
+      "name": "Level",
+      "classes": ["level", "level-left", "level-right", "level-item"]
+    },
+    {
+      "name": "Media",
+      "classes": ["media", "media-left", "media-right", "media-content"]
+    },
+    {
+      "name": "Hero",
+      "classes": [
+        "hero",
+        "hero-head",
+        "hero-foot",
+        "hero-body",
+        "is-bold",
+        "is-primary",
+        "is-info",
+        "is-success",
+        "is-warning",
+        "is-danger",
+        "is-light",
+        "is-dark",
+        "is-fullheight",
+        "is-fullheight-with-navbar"
+      ]
+    },
+    {
+      "name": "Section",
+      "classes": ["section"]
+    },
+    {
+      "name": "Footer",
+      "classes": ["footer"]
+    },
+    {
+      "name": "Tile",
+      "classes": [
+        "tile",
+        "is-ancestor",
+        "is-parent",
+        "is-child",
+        "is-1",
+        "is-2",
+        "is-3",
+        "is-4",
+        "is-5",
+        "is-6",
+        "is-7",
+        "is-8",
+        "is-9",
+        "is-10",
+        "is-11",
+        "is-12"
+      ]
+    },
+    {
+      "name": "Box",
+      "classes": ["box"]
+    },
+    {
+      "name": "Button",
+      "classes": [
+        "button",
+        "is-white",
+        "is-light",
+        "is-dark",
+        "is-black",
+        "is-text",
+        "is-primary",
+        "is-link",
+        "is-info",
+        "is-success",
+        "is-warning",
+        "is-danger",
+        "is-small",
+        "is-normal",
+        "is-medium",
+        "is-large",
+        "buttons",
+        "are-small",
+        "are-medium",
+        "are-large",
+        "is-fullwidth",
+        "is-outlined",
+        "is-inverted",
+        "is-rounded",
+        "is-hovered",
+        "is-focused",
+        "is-active",
+        "is-loading",
+        "is-static",
+        "is-grouped",
+        "has-addons",
+        "is-centered",
+        "is-right",
+        "is-selected"
+      ]
+    },
+    {
+      "name": "Content",
+      "classes": [
+        "content",
+        "is-lower-alpha",
+        "is-lower-roman",
+        "is-upper-alpha",
+        "is-upper-roman",
+        "is-small",
+        "is-medium",
+        "is-large"
+      ]
+    }
+  ]
+}

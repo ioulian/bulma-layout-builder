@@ -1,3 +1,5 @@
+import * as bulmaClasses from '../bulma-classes.json'
+
 const TEMPLATE_SELECTOR = '#template'
 const BLOCKS_SELECTOR = '#blocks'
 const CLASSES_SELECTOR = '#classes'
@@ -27,6 +29,15 @@ export default class LayoutBuilder {
     this.elBlocks = document.getElementById(BLOCKS_SELECTOR.substr(1))
     this.elClasses = document.getElementById(CLASSES_SELECTOR.substr(1))
 
+    this.elClasses.innerHTML = bulmaClasses.classes.reduce(
+      (html, group) =>
+        `${html}<optgroup label="${group.name}">${group.classes.reduce(
+          (htmlClasses, htmlClass) => `${htmlClasses}<option value="${htmlClass}">${htmlClass}</option>`,
+          ''
+        )}</optgroup>`,
+      ''
+    )
+
     this.attachEvents()
   }
 
@@ -53,7 +64,11 @@ export default class LayoutBuilder {
     if (this.elClasses instanceof HTMLSelectElement) {
       if (this.currentClickedElement !== null) {
         ;[...this.elClasses.options].forEach(option => {
-          this.currentClickedElement.classList.toggle(option.value, option.selected)
+          if (option.selected) {
+            this.currentClickedElement.classList.add(option.value)
+          } else {
+            this.currentClickedElement.classList.remove(option.value)
+          }
         })
       }
     }
